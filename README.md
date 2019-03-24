@@ -2,6 +2,13 @@
 
 ## Metric Distance
 
+### c-RMSD
+In [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics), the root-mean-square deviation of atomic positions (or simply root-mean-square deviation, RMSD) is the measure of the average distance between the atoms (usually the backbone atoms) of superimposed proteins. In the study of globular protein conformations, one customarily measures the similarity in three-dimensional structure by the RMSD of the Cα atomic coordinates after optimal rigid body superposition.
+
+A widely used way to compare the structures of biomolecules or solid bodies is to translate and rotate one structure with respect to the other to minimize the RMSD. Coutsias, et al. presented a simple derivation, based on quaternions, for the optimal solid body transformation (rotation-translation) that minimizes the RMSD between two sets of vectors. They proved that the quaternion method is equivalent to the well-known [Kabsch algorithm](https://en.wikipedia.org/wiki/Kabsch_algorithm)
+
+![c-RMSD](https://github.com/chanioxaris/MolecularConfigurations-Clustering/blob/master/img/c-rmsd.jpg)
+
 ### Discrete Frechet Distance (DFD)
 The [Fréchet distance](https://en.wikipedia.org/wiki/Fr%C3%A9chet_distance) is a measure of similarity between curves that takes into account the location and ordering of the points along the curves. It is named after [Maurice Fréchet](https://en.wikipedia.org/wiki/Maurice_Fr%C3%A9chet).
 
