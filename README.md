@@ -1,9 +1,9 @@
 ## Overview
 This is an implementation of clustering algorithms for molecular configurations. User can choose between the below two methods:
 
-A. c-RMSD as metric distance algorithm (implemented using [LAPACKE](https://github.com/Reference-LAPACK/lapack/tree/master/LAPACKE) library).
+1. c-RMSD as metric distance algorithm (implemented using [LAPACKE](https://github.com/Reference-LAPACK/lapack/tree/master/LAPACKE) library).
 
-B. Discrete Frechet as metric distance algorithm after shifting and rotating the molecular configurations to minimize the c-RMSD distance.
+2. Discrete Frechet as metric distance algorithm after shifting and rotating the molecular configurations to minimize the c-RMSD distance.
 
 ## Metric Distance
 
