@@ -1,11 +1,16 @@
 ## Overview
+This is an implementation of clustering algorithms for molecular configurations. User can choose between the below two methods:
+
+A. c-RMSD as metric distance algorithm (implemented using [LAPACKE](https://github.com/Reference-LAPACK/lapack/tree/master/LAPACKE) library).
+
+B. Discrete Frechet as metric distance algorithm after shifting and rotating the molecular configurations to minimize the c-RMSD distance.
 
 ## Metric Distance
 
 ### coordinate Root Mean Square Deviation (c-RMSD)
 In [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics), the root-mean-square deviation of atomic positions (or simply root-mean-square deviation, RMSD) is the measure of the average distance between the atoms (usually the backbone atoms) of superimposed proteins. In the study of globular protein conformations, one customarily measures the similarity in three-dimensional structure by the RMSD of the Cα atomic coordinates after optimal rigid body superposition.
 
-A widely used way to compare the structures of biomolecules or solid bodies is to translate and rotate one structure with respect to the other to minimize the RMSD. Coutsias, et al. presented a simple derivation, based on quaternions, for the optimal solid body transformation (rotation-translation) that minimizes the RMSD between two sets of vectors. They proved that the quaternion method is equivalent to the well-known [Kabsch algorithm](https://en.wikipedia.org/wiki/Kabsch_algorithm)
+A widely used way to compare the structures of biomolecules or solid bodies is to translate and rotate one structure with respect to the other to minimize the RMSD. Coutsias, et al. presented a simple derivation, based on quaternions, for the optimal solid body transformation (rotation-translation) that minimizes the RMSD between two sets of vectors. They proved that the quaternion method is equivalent to the well-known [Kabsch algorithm](https://en.wikipedia.org/wiki/Kabsch_algorithm).
 
 ![c-RMSD](https://github.com/chanioxaris/MolecularConfigurations-Clustering/blob/master/img/c-rmsd.jpg)
 
@@ -38,7 +43,7 @@ x21 y21 z21
 ...
 x<numConform><N> y<numConform><N> z<numConform><N>
 ```
-where ```numConform``` is the total molecular configurations, ```N``` the number of points in each molecular configuration
+where ```numConform``` is the total molecular configurations, ```N``` the number of points in each molecular configuration.
 
 ### Output file 
 The format of output text file, described by the following structure:
@@ -49,7 +54,7 @@ ID11 ID12 ID13 ID14
 ...
 IDk1 IDk2 IDk3
 ```
-where ```k``` the number of clusters, ```s``` the silhouette value  
+where ```k``` the number of clusters, ```s``` the optimum silhouette value.
 
 ## Compile
 
