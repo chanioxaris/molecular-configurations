@@ -2,7 +2,7 @@
 
 ## Metric Distance
 
-### c-RMSD
+### coordinate Root Mean Square Deviation (c-RMSD)
 In [bioinformatics](https://en.wikipedia.org/wiki/Bioinformatics), the root-mean-square deviation of atomic positions (or simply root-mean-square deviation, RMSD) is the measure of the average distance between the atoms (usually the backbone atoms) of superimposed proteins. In the study of globular protein conformations, one customarily measures the similarity in three-dimensional structure by the RMSD of the Cα atomic coordinates after optimal rigid body superposition.
 
 A widely used way to compare the structures of biomolecules or solid bodies is to translate and rotate one structure with respect to the other to minimize the RMSD. Coutsias, et al. presented a simple derivation, based on quaternions, for the optimal solid body transformation (rotation-translation) that minimizes the RMSD between two sets of vectors. They proved that the quaternion method is equivalent to the well-known [Kabsch algorithm](https://en.wikipedia.org/wiki/Kabsch_algorithm)
